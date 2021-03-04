@@ -1,0 +1,4 @@
+{
+    "WatchForFileChanges" : false,
+    "reporter" : "cypress-mochawesome-reporter"
+}

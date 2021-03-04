@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-04T05:05:02.558Z",
+    "end": "2021-03-04T05:05:11.027Z",
+    "duration": 8469,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "503e86d8-d123-4072-ba3d-45b8167285a0",
+      "title": "",
+      "fullFile": "cypress\\integration\\FileUpload_download.ts",
+      "file": "cypress\\integration\\FileUpload_download.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "File upload demo",
+          "fullTitle": "File upload demo",
+          "timedOut": null,
+          "duration": 4537,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "//cy.visit('https://filebin.net/')\n//cy.get('#fileField').attachFile('4th step.png')\ncy.visit('http://tinyupload.com/');\n//cy.get('.pole_plik').attachFile('4th step.png')\ncy.get('[name=\"uploaded_file\"]').attachFile('4th step.png');",
+          "err": {},
+          "uuid": "6489399e-4d9d-48c1-b9d9-daad077286c9",
+          "parentUUID": "503e86d8-d123-4072-ba3d-45b8167285a0",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "File download demo",
+          "fullTitle": "File download demo",
+          "timedOut": null,
+          "duration": 1156,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'example.jpg');",
+          "err": {},
+          "uuid": "e59c7f7d-5d30-4f1f-aff7-91ce6739e8a8",
+          "parentUUID": "503e86d8-d123-4072-ba3d-45b8167285a0",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "6489399e-4d9d-48c1-b9d9-daad077286c9",
+        "e59c7f7d-5d30-4f1f-aff7-91ce6739e8a8"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 5693,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
